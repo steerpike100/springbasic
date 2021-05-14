@@ -1,17 +1,19 @@
 package com.ea.SpringBasic;
 
 import com.ea.SpringBasic.pages.MainPage;
+import org.junit.Ignore;
 import org.junit.jupiter.api.Test;
+import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.annotation.Profile;
+import org.springframework.test.context.junit4.SpringRunner;
 
-import java.util.List;
-
+@Ignore
 @SpringBootTest
-@Profile("dev")
+@RunWith(SpringRunner.class)
 class SpringBasicApplicationTests {
 
 	@Autowired
@@ -22,7 +24,6 @@ class SpringBasicApplicationTests {
 
 	@Autowired
 	private WebDriver driver;
-
 
 	@Test
 	void performLoginTest() {

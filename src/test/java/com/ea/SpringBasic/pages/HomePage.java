@@ -13,11 +13,14 @@ import javax.annotation.PostConstruct;
 @Component
 public class HomePage extends BasePage {
 
-    @FindBy(how = How.LINK_TEXT, using = "Login")
+    @FindBy(how = How.LINK_TEXT, using = "login")
     public WebElement lnkLogin;
 
     @FindBy(how = How.LINK_TEXT, using = "Employee List")
     public WebElement lnkEmployeeList;
+
+    @FindBy(how = How.LINK_TEXT, using = "Employee Details")
+    public WebElement lnkEmployeeDetails;
 
     public LoginPage clickLogin() {
         lnkLogin.click();
@@ -26,6 +29,11 @@ public class HomePage extends BasePage {
     }
 
     public void clickEmployeeList() {lnkEmployeeList.click();}
+
+    public boolean isEmployeeDetailsExist(){
+        return lnkEmployeeDetails.isDisplayed();
+    }
+
 
 }
 

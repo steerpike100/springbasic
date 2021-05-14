@@ -20,7 +20,7 @@ public class LoginPage extends BasePage {
     @FindBy(how = How.CSS, using = ".btn-default")
     public WebElement btnLogin;
 
-    public void Login(String userName, String password)
+    public void login(String userName, String password)
     {
         txtUserName.sendKeys(userName);
         txtPassword.sendKeys(password);
