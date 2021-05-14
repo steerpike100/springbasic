@@ -1,4 +1,4 @@
-package com.ea.SpringBasic.libraries;
+package com.ea.springbasic.libraries;
 
 
 import io.github.bonigarcia.wdm.WebDriverManager;

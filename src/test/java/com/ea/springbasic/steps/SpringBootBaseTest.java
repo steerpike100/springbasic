@@ -1,6 +1,6 @@
-package com.ea.SpringBasic;
+package com.ea.springbasic.steps;
 
-import com.ea.SpringBasic.pages.MainPage;
+import com.ea.springbasic.pages.MainPage;
 import org.junit.Ignore;
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
@@ -8,26 +8,25 @@ import org.openqa.selenium.WebDriver;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.context.annotation.Profile;
 import org.springframework.test.context.junit4.SpringRunner;
 
+
 @Ignore
-@SpringBootTest
 @RunWith(SpringRunner.class)
-class SpringBasicApplicationTests {
+@SpringBootTest
+public class SpringBootBaseTest {
 
-	@Autowired
-	private MainPage mainPage;
+    @Autowired
+    private MainPage mainPage;
 
-	@Value("${app.url}")
-	private String appUrl;
+    @Value("${app.url}")
+    private String appUrl;
 
-	@Autowired
-	private WebDriver driver;
+    @Autowired
+    private WebDriver driver;
 
-	@Test
-	void performLoginTest() {
-		mainPage.performLogin();
-	}
-
+    @Test
+    void performLoginTest() {
+        mainPage.performLogin();
+    }
 }
