@@ -2,7 +2,7 @@ package com.ea.springbasic.steps;
 
 import com.ea.springbasic.pages.MainPage;
 import org.junit.Ignore;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 import org.springframework.beans.factory.annotation.Autowired;

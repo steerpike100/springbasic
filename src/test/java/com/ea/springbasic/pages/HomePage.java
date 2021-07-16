@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class HomePage extends BasePage {
 
-    @FindBy(how = How.LINK_TEXT, using = "login")
+    @FindBy(how = How.LINK_TEXT, using = "Login")
     public WebElement lnkLogin;
 
     @FindBy(how = How.LINK_TEXT, using = "Employee List")
@@ -23,7 +23,9 @@ public class HomePage extends BasePage {
         return new LoginPage();
     }
 
-    public void clickEmployeeList() {lnkEmployeeList.click();}
+    public void clickEmployeeList() {
+        lnkEmployeeList.click();
+    }
 
     public boolean isEmployeeDetailsExist(){
         return lnkEmployeeDetails.isDisplayed();

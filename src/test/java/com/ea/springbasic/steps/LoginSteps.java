@@ -2,10 +2,8 @@ package com.ea.springbasic.steps;
 
 import com.ea.springbasic.pages.HomePage;
 import com.ea.springbasic.pages.LoginPage;
-import cucumber.api.java.en.And;
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
 import io.cucumber.datatable.DataTable;
+import io.cucumber.java.en.*;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -31,7 +29,6 @@ public class LoginSteps {
 
     @And("I enter the following for login")
     public void iEnterTheFollowingForLogin(DataTable table) {
-
         List<String> data = table.asList();
         loginPage.login(data.get(2), data.get(3));
 

@@ -1,8 +1,5 @@
 package com.ea.springbasic.steps;
-
-import cucumber.api.Scenario;
-import cucumber.api.java.After;
-import cucumber.api.java.Before;
+import io.cucumber.java.*;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,6 +29,4 @@ public class Hooks {
         }
         driver.quit();
     }
-
-
 }

@@ -24,6 +24,7 @@ public class LoginPage extends BasePage {
 
     public HomePage clickLogin() {
         System.out.println("Click login from login page");
+        btnLogin.click();
         return new HomePage();
     }
 
